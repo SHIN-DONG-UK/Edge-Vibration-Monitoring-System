@@ -1,5 +1,5 @@
-# EdgeSense
-| Edge-based Equipment Monitoring & Analytics Platform
+# EVMS
+| Edge-based Equipment Vibration Monitoring System
 
 ## 1. 프로젝트 목적
 
