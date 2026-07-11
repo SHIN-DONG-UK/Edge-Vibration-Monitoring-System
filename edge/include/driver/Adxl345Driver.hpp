@@ -1,5 +1,9 @@
 //ADXL345와 통신하는 클래스
-#include "./common/Msgs.hpp"
+struct Acceleration{
+    double x{};
+    double y{};
+    double z{};
+};
 
 class Adxl345Driver
 {
