@@ -76,8 +76,8 @@ private:
     static constexpr std::uint8_t FULL_RES_BIT       = 0x08;
 
     void verify_device();
-    void set_odr(Config& config);
-    void set_range_and_resolution(Config& config);
+    void set_odr();
+    void set_range_and_resolution();
 
     void set_measurement_mode();
     void set_standby_mode();
@@ -85,7 +85,8 @@ private:
     // util function
     Acceleration convert_raw_value(const std::array<uint8_t, 6>& raw_arr) const;
     static std::int16_t combine_bytes(std::uint8_t low, std::uint8_t high);
-    
+    double get_scale_factor() const;
+
     I2CBus m_bus;
     Config m_config;
 };
